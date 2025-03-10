@@ -7,7 +7,11 @@
       "@nx/react/typings/cssmodule.d.ts",
       "@nx/react/typings/image.d.ts",
       "vite/client"
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "exclude": [
     "src/**/*.spec.ts",
@@ -18,7 +22,7 @@
     "src/**/*.test.js",
     "src/**/*.spec.jsx",
     "src/**/*.test.jsx",
-    "vite.config.ts",
+    "vite.config.mts",
     "vite.config.mts",
     "vitest.config.ts",
     "vitest.config.mts"

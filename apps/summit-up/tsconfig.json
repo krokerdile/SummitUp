@@ -3,9 +3,15 @@
     "jsx": "react-jsx",
     "allowJs": false,
     "esModuleInterop": false,
+    "moduleResolution": "node16",
+    "module": "Node16",
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "types": ["vite/client", "vitest"]
+    "types": ["vite/client", "vitest"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "files": [],
   "include": [],
